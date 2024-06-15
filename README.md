@@ -5,10 +5,8 @@ This is the code for **Rendering 360 degree view with few input views by PixelSp
 
 ## Output
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/RyanPham19092002/Rendering-360-degree-view-with-few-input-views-by-PixelSplat/blob/main/assets/output.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Video Demo](https://github.com/RyanPham19092002/Rendering-360-degree-view-with-few-input-views-by-PixelSplat/blob/main/assets/output.mp4)
+
 
 
 ## Camera-ready Updates
