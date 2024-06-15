@@ -1,0 +1,23 @@
+defaults:
+  - view_sampler: bounded
+
+name: VinAI
+roots: [dataset/VinAI]
+make_baseline_1: true
+augment: true
+
+image_shape: [256, 256]
+background_color: [0.0, 0.0, 0.0]
+cameras_are_circular: false
+
+baseline_epsilon: 1e-3
+max_fov: 90.0
+
+skip_bad_shape: true
+near: 0.5
+far: 5000.
+baseline_scale_bounds: true
+shuffle_val: true
+test_len: -1
+test_chunk_interval: 1
+test_times_per_scene: 1
