@@ -11,8 +11,6 @@ This is the code for **Rendering 360 degree view with few input views by PixelSp
 </video>
 
 
-https://github.com/dcharatan/pixelsplat/assets/13124225/de90101e-1bb5-42e4-8c5b-35922cae8f64
-
 ## Camera-ready Updates
 
 This version of the codebase has been updated slightly to reflect the CVPR camera-ready version of the paper (and the latest version of the paper on arXiv). Here are the changes:
