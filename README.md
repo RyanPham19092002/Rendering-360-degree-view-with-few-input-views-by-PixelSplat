@@ -1,6 +1,7 @@
-# pixelSplat
+# Rendering 360 degree view with few input views by PixelSplat
 
-This is the code for **pixelSplat: 3D Gaussian Splats from Image Pairs for Scalable Generalizable 3D Reconstruction** by David Charatan, Sizhe Lester Li, Andrea Tagliasacchi, and Vincent Sitzmann.
+
+This is the code for **Rendering 360 degree view with few input views by PixelSplat model**
 
 Check out the [project website here](https://dcharatan.github.io/pixelsplat). We will be presenting pixelSplat at CVPR 2024 in Seattle.
 
@@ -118,36 +119,8 @@ We provide VS Code launch configurations for easy debugging.
 
 Our extrinsics are OpenCV-style camera-to-world matrices. This means that +Z is the camera look vector, +X is the camera right vector, and -Y is the camera up vector. Our intrinsics are normalized, meaning that the first row is divided by image width, and the second row is divided by image height.
 
-## Figure Generation Code
+## Output
 
-We've included the scripts that generate tables and figures in the paper. Note that since these are one-offs, they might have to be modified to be run.
-
-## Notes on Bugs
-
-Since the original release of the pixelSplat codebase, the following bugs have been identified:
-
-- The LPIPS loss was using the wrong input range (0 to 1 instead of -1 to 1). Results should be slightly better with this fixed. Thank you to Katja Schwarz for finding this bug!
-- The view sampler at `src/dataset/view_sampler/view_sampler_bounded.py` was incorrectly using `min_gap` in place of `max_gap` during training. This bug has been fixed, and the training configurations have been updated to reflect the unintended behavior, so this shouldn't affect the results. Note that views sampled during evaluation are chosen differently, so those were not affected. Thank you to Chris Wewer for finding this bug!
-
-## Related Papers
-
-Check out the following papers that build on top of pixelSplat's codebase:
-
-- *MVSplat: Efficient 3D Gaussian Splatting from Sparse Multi-View Images* by Yuedong Chen et al. ([webpage](https://donydchen.github.io/mvsplat/), [code](https://github.com/donydchen/mvsplat)): This method solves the same problem as pixelSplat using plane sweeping/cost volumes. This yields slightly better novel view synthesis results, much cleaner 3D Gaussian point clouds, and improved cross-dataset generalization.
-- *latentSplat: Autoencoding Variational Gaussians for Fast Generalizable 3D Reconstruction* by Christopher Wewer et al. ([webpage](https://geometric-rl.mpi-inf.mpg.de/latentsplat/)): This is a generative model built on top of pixelSplat. It predicts semantic Gaussians in 3D space, splats them into 2D, and then converts the resulting 2D features into images using a 2D generative model.
-
-If you used ideas or code from pixelSplat and would like to be featured here, send an email to charatan@mit.edu!
-
-## BibTeX
-
-```
-@inproceedings{charatan23pixelsplat,
-      title={pixelSplat: 3D Gaussian Splats from Image Pairs for Scalable Generalizable 3D Reconstruction},
-      author={David Charatan and Sizhe Li and Andrea Tagliasacchi and Vincent Sitzmann},
-      year={2023},
-      booktitle={arXiv},
-}
-```
 
 ## Acknowledgements
 
