@@ -4,7 +4,12 @@
 This is the code for **Rendering 360 degree view with few input views by PixelSplat model**
 
 ## Output
-![Video Demo](https://github.com/RyanPham19092002/Rendering-360-degree-view-with-few-input-views-by-PixelSplat/blob/main/assets/output.mp4)
+
+<video width="320" height="240" controls>
+  <source src="https://github.com/RyanPham19092002/Rendering-360-degree-view-with-few-input-views-by-PixelSplat/blob/main/assets/output.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 https://github.com/dcharatan/pixelsplat/assets/13124225/de90101e-1bb5-42e4-8c5b-35922cae8f64
 
