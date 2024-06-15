@@ -3,7 +3,7 @@
 
 This is the code for **Rendering 360 degree view with few input views by PixelSplat model**
 
-Check out the [project website here](https://dcharatan.github.io/pixelsplat). We will be presenting pixelSplat at CVPR 2024 in Seattle.
+## Output
 
 https://github.com/dcharatan/pixelsplat/assets/13124225/de90101e-1bb5-42e4-8c5b-35922cae8f64
 
@@ -119,9 +119,3 @@ We provide VS Code launch configurations for easy debugging.
 
 Our extrinsics are OpenCV-style camera-to-world matrices. This means that +Z is the camera look vector, +X is the camera right vector, and -Y is the camera up vector. Our intrinsics are normalized, meaning that the first row is divided by image width, and the second row is divided by image height.
 
-## Output
-
-
-## Acknowledgements
-
-This work was supported by the National Science Foundation under Grant No. 2211259, by the Singapore DSTA under DST00OECI20300823 (New Representations for Vision), by the Intelligence Advanced Research Projects Activity (IARPA) via Department of Interior/ Interior Business Center (DOI/IBC) under 140D0423C0075, and by the Amazon Science Hub. The Toyota Research Institute also partially supported this work. The views and conclusions contained herein reflect the opinions and conclusions of its authors and no other entity.
