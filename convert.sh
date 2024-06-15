@@ -1,0 +1,1 @@
+python src/scripts/convert_VinAI.py --input_dir /home/ubuntu/Workspace/phat-intern-dev/VinAI/mvsplat/input_view_full  --output_dir datasets/VinAI --json_file /home/ubuntu/Workspace/phat-intern-dev/VinAI/mvsplat/transforms_ego.json --json_name index_VinAI_6_input_full_views.json

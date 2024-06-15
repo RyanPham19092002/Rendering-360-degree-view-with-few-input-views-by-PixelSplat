@@ -1,0 +1,2 @@
+sudo mkdir -p /home/ubuntu/Workspace/phat-intern-dev/VinAI/pixelsplat/outputs/local
+python -m src.main +experiment=VinAI checkpointing.load=checkpoints/re10k.ckpt mode=test dataset/view_sampler=evaluation dataset.view_sampler.index_path=assets/evaluation_index_VinAI_6_input_full_view_nctx2.json test.compute_scores=false
